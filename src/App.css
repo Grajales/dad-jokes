@@ -9,7 +9,7 @@
 
 .App-header {
   background-color: #222;
-  height: 150px;
+  height: 50px;
   padding: 20px;
   color: white;
 }
@@ -21,7 +21,46 @@
 .App-intro {
   font-size: large;
 }
+button{
+  padding: 10px;
+  margin: 30px;
+  font-size: 20px;
+  background-color: aqua;
+ }
+ p {
+   padding: 20px;
+  font-size: 38px;
+  color: rgb(46, 8, 218);
+  font-family: 'Play', sans-serif; 
+  animation: colorful-diagonal-slide infinite 20s linear;
+}
+   /* used in p*/
+ /* Not used */
+ @keyframes colorful-diagonal-slide {
+  
+  from {
+    left: 0;
+    top: 0;
+  }
 
+  10% {
+    background-color: rgb(81, 81, 197);
+  }
+
+  10% {
+    background-color: rgb(81, 132, 81);
+  }
+
+  25%, 75% {
+    background-color: rgb(204, 111, 111);
+  }
+
+  100% {
+    left: 100px;
+    top: 100px;
+  }
+
+}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
